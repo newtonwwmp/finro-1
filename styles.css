@@ -400,16 +400,7 @@ i:not(.fas):not(.fab):not(.far) {
     position: relative;
 }
 
-.process-section::before {
-    content: '';
-    position: absolute;
-    left: 45px;
-    top: 50px;
-    bottom: 50px;
-    width: 2px;
-    background: var(--accent-gradient);
-    opacity: 0.3;
-}
+/* Vertical line removed */
 
 .process-step {
     display: flex;
@@ -421,13 +412,22 @@ i:not(.fas):not(.fab):not(.far) {
     border-radius: 20px;
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(148, 163, 184, 0.1);
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.12);
 }
 
 .process-step:hover {
-    transform: translateX(10px) translateY(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 125, 255, 0.12);
     border-color: var(--accent-light);
+}
+
+.process-arrow {
+    display: flex;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin: -0.5rem 0 1.5rem;
+    opacity: 0.7;
 }
 
 .step-badge {
@@ -2288,6 +2288,7 @@ footer {
         padding: 3.5rem 2rem;
         max-width: 340px;
         margin: 0 auto 2rem;
+        box-shadow: 0 15px 45px rgba(15, 23, 42, 0.12);
     }
 
     /* Footer */
@@ -3875,16 +3876,7 @@ h4 {
     position: relative;
 }
 
-.process-section::before {
-    content: '';
-    position: absolute;
-    left: 45px;
-    top: 50px;
-    bottom: 50px;
-    width: 2px;
-    background: var(--accent-gradient);
-    opacity: 0.3;
-}
+/* Vertical line removed */
 
 .process-step {
     display: flex;
@@ -3896,11 +3888,12 @@ h4 {
     border-radius: 20px;
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(148, 163, 184, 0.1);
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.12);
 }
 
 .process-step:hover {
     transform: translateX(10px);
-    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 125, 255, 0.12);
     border-color: var(--accent-light);
 }
 
@@ -5649,6 +5642,7 @@ footer {
         max-width: 340px;
         /* Narrower (horizontal) */
         margin: 0 auto 2rem;
+        box-shadow: 0 15px 45px rgba(15, 23, 42, 0.12);
     }
 
     /* Footer */
